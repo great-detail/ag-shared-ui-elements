@@ -1,12 +1,14 @@
 # ag-shared-ui-elements
 
-Awesome Golf Shared UI Elements
+**Revisited**: 29 April 2025 – _Awkward limitations in UI Builder authoring. See below._
 
-This repo exists so we don’t have to copy-paste, restyle, or rewire the same UI over and over. Due to the current state of UI Toolkit, as of 29/04/2025 we have several limitations. These are listed below.
+This repo exists so we don’t have to copy-paste, restyle, or rewire the same UI over and over.
 
 ## How to Use the UI Elements
 
 ### 1. Add a Shared UI Element to Your Scene
+
+Can be done via UI Builder or c# instantiation.
 
 ```csharp
 var buttonScene = (PackedScene)ResourceLoader.Load("res://ui/shared/button_template.tscn");
