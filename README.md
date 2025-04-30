@@ -46,7 +46,7 @@ Yes, it’s a bit more verbose — but it keeps everything consistent and reusab
 
 ### Styles Use Relative Paths
 
-The UI styling is handled using **USS files** with **relative paths**.  
+The UI styling is handled using **USS files** with **relative or absolute paths**.  
 This means:
 - **Don’t move folders or files around.**
 - Changing the folder structure will **break all the UI styles** and require MANUAL editing of USS files (At least in the current version of UI Toolkit)
