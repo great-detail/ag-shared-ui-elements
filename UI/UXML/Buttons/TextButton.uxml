@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Button text="Forgot your password?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TextButton" view-data-key="ResetPasswordButton" style="background-color: rgba(255, 255, 255, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); font-size: 46px; color: rgb(255, 255, 255); -unity-font-style: normal; -unity-text-align: middle-left; width: auto; height: 72px; top: auto; align-self: flex-start; align-items: flex-start; justify-content: center; align-content: flex-start; flex-shrink: 1; overflow: visible; position: relative;">
+        <Bindings>
+            <AwesomeGolf.Localization.LocalizedStringDataBinding property="text" tableTEST="project://database/Assets/Resources/I2Languages.asset?fileID=11400000&amp;guid=dd36c66ab66b3084aab61abd779fbfc9&amp;type=2#I2Languages" Term="Menu_SignIn/SignInButtonForgotPassword" />
+        </Bindings>
+    </ui:Button>
+</ui:UXML>

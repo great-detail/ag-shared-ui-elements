@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <AwesomeGolf.UI.Utilities.SafeArea name="SafeArea" style="background-image: none; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="menu__container" picking-mode="Ignore" style="width: 100%; height: 100%; align-items: center; justify-content: center; background-color: rgba(6, 14, 255, 0); background-image: none; -unity-background-scale-mode: scale-and-crop; flex-direction: row; align-self: center;">
+            <GDKeyboardAvoidingPanel demo-id="41" is-demo="true" view-data-key="GDKeyboardAvoidingPanel" name="GDKeyboardAvoidingPanel" p-margin-around-input="175" style="align-items: center; justify-content: center; align-self: center; align-content: center; flex-grow: 0; flex-shrink: 1; flex-direction: column; width: 100%; height: 100%; margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0;" />
+        </ui:VisualElement>
+    </AwesomeGolf.UI.Utilities.SafeArea>
+</ui:UXML>

@@ -1,0 +1,39 @@
+.gd-text-field > .unity-base-field__input {
+    border-width: 0;
+    text-align: center;
+}
+
+.gd-text-field > .unity-base-field__input:focus {
+    border-width: 0;
+    text-align: left;
+}
+
+.unity-base-text-field__input {
+    border-width: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.gd-text-field > .unity-base-field__label {
+    padding-left: 10px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: resource('Fonts/FatFrank-Regular');
+}
+
+.gd-text-field > .unity-text-field__input {
+    background-color: transparent;
+    border-width: 0;
+    font-size: 36px;
+    color: rgb(10, 39, 98);
+    -unity-font-definition: resource('Fonts/FatFrank-Regular');
+    display: flex;
+    text-align: left;
+}
+
+#GDInputField > #mobileInputField > #Background > #tfTextField > #unity-text-input {
+    -unity-text-align: middle-left;
+    -unity-font-style: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

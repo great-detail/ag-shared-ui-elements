@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Submodules/ag-shared-ui-elements/UI/USS/GDCheckBox.uss?fileID=7433441132597879392&amp;guid=778ee109f2811504e82e11b0a101878e&amp;type=3#GDCheckBox" />
+    <ui:Toggle label="Checkbox" name="GDToggle" class="gd-toggle" style="justify-content: flex-start; color: rgb(255, 255, 255); align-content: auto; align-items: center; flex-grow: 0; font-size: 24px; -unity-text-align: lower-right; flex-shrink: 1;" />
+</ui:UXML>

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Toggle label="I have read, and agree to, the &lt;b&gt;&lt;link=&quot;tos&quot;&gt;Terms of Service&lt;/link&gt;&lt;/b&gt; and &lt;b&gt;&lt;link=&quot;pp&quot;&gt;Privacy Policy&lt;/link&gt;&lt;/b&gt;.&#10;" name="Toggle" focusable="false" class="gd-toggle" style="justify-content: center; color: rgb(255, 255, 255); align-content: center; align-items: center; flex-grow: 0; font-size: 46px; -unity-text-align: lower-right; flex-direction: row; top: auto; margin-bottom: 0; margin-top: 0; margin-right: 0; margin-left: 0; left: auto; width: auto; flex-shrink: 1; overflow: visible; right: auto;">
+        <Bindings>
+            <AwesomeGolf.Localization.LocalizedStringDataBinding property="label" tableTEST="project://database/Assets/Resources/I2Languages.asset?fileID=11400000&amp;guid=dd36c66ab66b3084aab61abd779fbfc9&amp;type=2#I2Languages" Term="General/OwnerAccountTitle" />
+        </Bindings>
+    </ui:Toggle>
+</ui:UXML>

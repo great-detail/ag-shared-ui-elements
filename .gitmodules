@@ -1,0 +1,3 @@
+[submodule "UnityMobileInput-UIToolkit"]
+	path = UnityMobileInput-UIToolkit
+	url = https://github.com/willd-gd/UnityMobileInput-UIToolkit.git

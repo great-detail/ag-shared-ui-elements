@@ -1,0 +1,26 @@
+.gd-toggle {
+    flex-direction: row;
+}
+
+.gd-toggle > .unity-base-field__input {
+}
+
+.gd-toggle > .unity-toggle__input {
+    flex-grow: 0;
+    justify-content: flex-end;
+    width: 100px;
+    height: auto;
+    min-width: 100px;
+}
+
+.gd-toggle > .unity-toggle__checkmark {
+    flex-grow: 0;
+}
+
+.gd-toggle > .unity-toggle__label {
+    flex-grow: 0;
+    justify-content: center;
+    width: auto;
+    align-self: center;
+    align-items: center;
+}
