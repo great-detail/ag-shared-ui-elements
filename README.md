@@ -10,7 +10,11 @@ This repo exists so we don’t have to copy-paste, restyle, or rewire the same U
 
 Can be done via UI Builder or c# instantiation.
 
-### 2. Don’t Touch the Folder Structure
+### 2. Style them
+
+Style them by adding USS selectors. You can override EVERY USS property in the children.
+
+### 3. Don’t Touch the Folder Structure
 
 Keep everything where it is. Moving files or folders will break style references (see below).
 
