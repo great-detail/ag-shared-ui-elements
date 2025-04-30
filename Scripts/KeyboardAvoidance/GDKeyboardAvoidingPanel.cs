@@ -1,9 +1,4 @@
-﻿using System.Collections.Generic;
-using AwesomeGolf;
-using AwesomeGolf.Common;
-using AwesomeGolf.UI;
-using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
 
