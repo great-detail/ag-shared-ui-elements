@@ -37,7 +37,7 @@ Keep everything where it is. Moving files or folders will break style references
 
 ## Limitations to Keep in Mind ⚠️
 
-This repo contains a shared set of UI elements built with a UI toolkit. They’re super handy, but there are a few important things to know before using or modifying them:
+This repo contains a shared set of UI elements built with a UI toolkit, but there are a few important things to know before using or modifying them:
 
 ### Template Containers
 
