@@ -12,7 +12,7 @@ Can be done via UI Builder or c# instantiation.
 
 ### 2. Don’t Touch the Folder Structure
 
-Keep everything where it is. Moving files or folders will break style references and cause visual issues.
+Keep everything where it is. Moving files or folders will break style references (see below).
 
 ---
 
