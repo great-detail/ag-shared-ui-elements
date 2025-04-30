@@ -10,22 +10,7 @@ This repo exists so we don’t have to copy-paste, restyle, or rewire the same U
 
 Can be done via UI Builder or c# instantiation.
 
-```csharp
-var buttonScene = (PackedScene)ResourceLoader.Load("res://ui/shared/button_template.tscn");
-var buttonContainer = buttonScene.Instance();
-AddChild(buttonContainer);
-```
-
-### 2. Access a Child Node Safely
-
-Since child names are fixed, you’ll need to access them like this:
-
-```csharp
-var label = buttonContainer.GetNode("MarginContainer/Label");
-label.Text = "Submit";
-```
-
-### 3. Don’t Touch the Folder Structure
+### 2. Don’t Touch the Folder Structure
 
 Keep everything where it is. Moving files or folders will break style references and cause visual issues.
 
@@ -37,20 +22,24 @@ This repo contains a shared set of UI elements built with a UI toolkit. They’r
 
 ### Template Containers
 
-All elements are wrapped in **Template containers**. These are a bit restrictive:
-- You **can’t rename** child nodes inside them.
+All UXML elements are wrapped in **Template containers**. These are a bit restrictive:
+- You **can’t rename** child elements inside them.
 - Because of that, you’ll need to **access elements in two steps**:
   1. Grab the top-level container.
   2. Then get the child element you need from there.
+ 
+**Note:** This breaks custom elements such as SettingsOptions as the custom control can't directly reference the child name (as it can't be set to a unique value). It's recommended to NOT use templates in this case and unpack the similar template locally, not globally.
 
-### Double Node Lookup
+![image](https://github.com/user-attachments/assets/7b8af7e6-39e0-461a-8561-aae752b5cac3)
 
-You won’t be able to directly access nested nodes. Instead, do something like this:
+
+### Double Element Lookup
+
+You won’t be able to directly access nested elements. Instead, do something like this:
 
 ```csharp
-var container = GetNode("MyButtonContainer");
-var button = container.GetNode("MarginContainer/Button");
-button.Text = "Click Me";
+mLeftButtonContainer = this.Q<VisualElement>(cLeftButtonContainerID); // Does not need to be generic, template containers IDs CAN be changed
+mLeftButton = mLeftButtonContainer.Q<VisualElement>(cLeftButtonID); // Where the ID is generic
 ```
 
 Yes, it’s a bit more verbose — but it keeps everything consistent and reusable.
@@ -60,12 +49,5 @@ Yes, it’s a bit more verbose — but it keeps everything consistent and reusab
 The UI styling is handled using **USS files** with **relative paths**.  
 This means:
 - **Don’t move folders or files around.**
-- Changing the folder structure will **break all the UI styles** — really, all of them.
-
-For example, styles are loaded like this:
-```uss
-@import "../styles/button.uss";
-```
-If you move anything, paths like that will stop working.
-
+- Changing the folder structure will **break all the UI styles** and require MANUAL editing of USS files (At least in the current version of UI Toolkit)
 ---
