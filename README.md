@@ -10,7 +10,7 @@ This repo exists so we don’t have to copy-paste, restyle, or rewire the same U
 To clone this repository **with all nested submodules**, use:
 
 ```bash
-git clone --recurse-submodules https://github.com/NEW_REPO_TBD/ag-shared-ui-elements.git
+git clone --recurse-submodules https://github.com/great-detail/ag-shared-ui-elements.git
 ```
 
 If you've already cloned the repository without the submodules, run the following to fetch them afterward:
@@ -27,7 +27,7 @@ Can be done via UI Builder or c# instantiation.
 
 ### 2. Style them
 
-Style them by adding USS selectors. You can override EVERY USS property in the children.
+Style them by adding USS selectors. You can override EVERY USS property in the children. Alternatively, create concrete classes from the abstract classes e.g. selectors
 
 ### 3. Don’t Touch the Folder Structure
 
