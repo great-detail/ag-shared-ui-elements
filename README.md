@@ -1,6 +1,6 @@
 # ag-shared-ui-elements
 
-**Revisited**: 29 April 2025 – _Awkward limitations in UI Builder authoring. See below._
+**Revisited**: 12 April 2025 – _Awkward limitations in UI Builder authoring. See below._
 
 This repo exists so we don’t have to copy-paste, restyle, or rewire the same UI over and over.
 
