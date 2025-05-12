@@ -61,12 +61,10 @@ mLeftButtonContainer = this.Q<VisualElement>(cLeftButtonContainerID); // Does no
 mLeftButton = mLeftButtonContainer.Q<VisualElement>(cLeftButtonID); // Where the ID is generic
 ```
 
-Yes, it’s a bit more verbose — but it keeps everything consistent and reusable.
-
 ### Styles Use Relative Paths
 
 The UI styling is handled using **USS files** with **relative or absolute paths**.  
 This means:
 - **Don’t move folders or files around.**
-- Changing the folder structure will **break all the UI styles** and require MANUAL editing of USS files (At least in the current version of UI Toolkit)
+- Changing the folder structure will **break all the UI styles** and require MANUAL editing of USS files (At least in the current version of UI Toolkit). To check for these warnings reimport the whole project.
 ---
