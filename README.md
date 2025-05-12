@@ -47,7 +47,7 @@ All UXML elements are wrapped in **Template containers**. These are a bit restri
   1. Grab the top-level container.
   2. Then get the child element you need from there.
  
-**Note:** This breaks custom elements such as SettingsOptions as the custom control can't directly reference the child name (as it can't be set to a unique value). It's recommended to NOT use templates in this case and either unpack the similar template locally, not globally or instantiate WITHOUT the template container.
+**Note:** This breaks custom elements such as SettingsOptions as the custom control can't directly reference the child name (as it can't be set to a unique value). It's recommended to NOT use templates in this case and either unpack the similar template locally, not globally or instantiate WITHOUT the template container. If you're creating concrete classes based off the shared abstract classes, this will still apply if you template your uxml element.
 
 ![image](https://github.com/user-attachments/assets/7b8af7e6-39e0-461a-8561-aae752b5cac3)
 
